@@ -1,0 +1,78 @@
+Aiemmin olin kattonu mitä tolla saa aikaseks ja innostuin lisää... En muista laitoinko sitä ylös.
+https://www.youtube.com/watch?v=uONz0lEWft0&list=PLillGF-RfqbZMNtaOXJQiDebNXjVapWPZ
+katoin mitä pitää tehtävässä tehdä lopulta, jotta kokonaisuus tulisi selville.
+
+7.2 
+Katsoin 40 minuuttia ja asentelin samalla node.js 12, meillä oli versio 14 asennettuna. Menin vähän vaikeemman kautta säätään sitä version alentamista. Asensin nvm:n ja oli 2 eri versioo, jotka ei enää kummatkaa toiminu, sit lopult poistin kaikki ja asensin vaan version 12.
+Tiedoston ja kansioiden muokkaamista oli tähän asti. 37:57
+https://www.youtube.com/watch?v=fBNz5xF-Kx4
+Käy läpi moduleita. Events menee jotenki ohi, että mitä se tarkottaa.
+
+56:00 -> Näyttää miten serveri laitetaan.
+Nodemon on oiva työkalu, se päivittää js tiedostoon tehdyt muutokset automaattisesti, eikä tarvi käynnistellä serveriä kokoajan uusiks ite.
+npm run dev komennolla käynnistetään nyt serveri.
+
+Rupesin säätää sitä videolla olevaa serveriä. Tuli erroria joka näytti siltä että node serveri jäi pyöriin. Joten piti selvittää että:
+taskkill /f /im node.exe
+saa pois ne pyörimästä.
+Katottu video ja tehty serveri videon mukana.
+Sit se pitää laittaa Herokuun
+
+14.2 
+Jatkoin ohjeiden mukaan Herokuun laittamista. Heroku oli vähä muuttunu tai sit erilainen windowssilla ku videon macillä. Ei se haitannu.
+Toki jotain meni vikaan eikä se Herokussa näytä mitään. Tarkastan ongelmat.
+
+16.2
+Aikani mietin ja samalla opettelin Gitin ja Herokun käyttöä. Ongelma oli vaan polun muodostamis kohdassa kirjotusvirhe. Itellä isolla Public ja harjotuksessa public. Nyt se eka node.js crash course videon harjotus toimii osotteessa https://quiet-sierra-85634.herokuapp.com/.
+Rupes kiinnostelee miks node.js on nopeempi ku muut ni luin tämän:
+https://www.peerbits.com/blog/why-nodejs-fast-and-its-best-use-cases.html
+-
+Alotin MongoDB videon katselun. Lautaslinkki oli mongodb:n sivuilla piilotettu eikä samassa kohtaa ku videossa,
+https://www.mongodb.com/try/download/community
+
+22.2
+Katselin videota loppuun, käytiin läpi mongoDB shell komentoja. Sit asenneltii mongodb cloud https://cloud.mongodb.com/ sivustolla.
+Tonne cloudii komennot on ainaki eritavalla mongoshellistä ku videolla. 
+https://docs.mongodb.com/mongodb-shell/run-commands/
+use myNewDatabase
+db.myCollection.insertOne( { x: 1 } );
+
+videolla: db.createCollection('todos') ja se antaa erroria mulle ainaki mongoshellissä
+
+
+23.2
+https://www.youtube.com/watch?v=L72fhGm1tfE
+aloin katsomaan EXPRESS JS crash coursee. Tästä meillä oli jo Olli Koskimaan pitämänä. Naputtelin videon ohjeiden mukaan.
+
+18.3 katsoin illalla vähä EXPRESS JS crash
+
+19.3 loput EXPRESS JS crash videosta aamulla
+templaten teko kohdassa jotenki meni ohi, millä logiikalla se haki ne main.handlebars ja index.handlebars sieltä views/layouts kansiosta...
+Alotin Angular hommelit: https://angular.io/start
+Sit asensin lähiympäristön(local environment). Joutu päivittää node.js enne ku alko toimii.
+Tein git reporisitoryn vaikka tehny tehtäviä jo.
+https://github.com/marlandos/CT70A9140-MS
+
+20.3
+Laitoin ekan harkan githubiin, tän pitäs näyttää vaan html sivu ja joku teksti vaan
+https://github.com/marlandos/nodeJSHarkka1
+
+Angular
+https://github.com/marlandos/AngularHarkka
+ng serve --open oli se komento jolla saadaa tää heräteltyä käyntiin
+
+21.3
+https://angular.io/tutorial/toh-pt3 tästä jatkoin
+
+kesti pitkään tajuta et tää bugas heroes.component.html
+<!-- <div>
+    <label for="name">Hero name: </label>
+    <input id="name" [(ngModel)]="hero.name" placeholder="name">
+  </div> -->
+
+Add Navigation kohta tehty päivän lopuks
+
+22.3
+Jatketaan Get data from server kohdasta
+
+
